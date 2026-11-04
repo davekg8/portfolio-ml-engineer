@@ -10,6 +10,16 @@ Le site est statique. Ouvrez `dist/index.html` dans un navigateur ou servez le d
 
 - `dist/index.html` — contenu et structure
 - `dist/styles.css` — direction visuelle et responsive design
-- `dist/script.js` — langue FR/EN et animations progressives
-- `dist/assets/` — CV français et anglais
+- `dist/script.js` — langue FR/EN, menu mobile et animations progressives
+- `dist/assets/` — CV français et anglais, image d'aperçu `og-image.png`
+
+## Langue
+
+La langue est choisie dans cet ordre : paramètre `?lang=fr` ou `?lang=en` dans l'URL, dernier choix du visiteur, puis langue du navigateur. Pour envoyer la version anglaise à un recruteur : `https://<ton-site>/?lang=en`.
+
+Chaque texte traduit porte `data-fr` et `data-en`. Pour un saut de ligne, écrire `&lt;br&gt;` dans ces attributs.
+
+## Aperçu de partage (LinkedIn, etc.)
+
+`og:image` pointe vers `assets/og-image.png` en chemin relatif. LinkedIn exige une URL absolue : une fois le site en ligne, remplacer par `https://<ton-site>/assets/og-image.png` dans `dist/index.html`.
 

@@ -6,6 +6,16 @@
   <meta name="description" content="Portfolio de David Egbakou, ML Engineer spécialisé en forecasting, séries temporelles et systèmes Machine Learning industriels.">
   <meta name="theme-color" content="#09120f">
   <title>David Egbakou — ML Engineer</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="David Egbakou — ML Engineer">
+  <meta property="og:description" content="Portfolio de David Egbakou, ML Engineer spécialisé en forecasting, séries temporelles et systèmes Machine Learning industriels.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,13 +23,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au contenu</a>
+  <a class="skip-link" href="#main" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Accueil David Egbakou"><span class="brand-mark">DE</span><span class="brand-name">David Egbakou</span></a>
-    <nav aria-label="Navigation principale">
-      <a href="#impact">Impact</a><a href="#experience">Parcours</a><a href="#projects">Projets</a><a href="#contact">Contact</a>
+    <a class="brand" href="#top" aria-label="Accueil David Egbakou" data-aria-fr="Accueil David Egbakou" data-aria-en="David Egbakou home"><span class="brand-mark">DE</span><span class="brand-name">David Egbakou</span></a>
+    <nav id="site-nav" aria-label="Navigation principale" data-aria-fr="Navigation principale" data-aria-en="Main navigation">
+      <a href="#impact">Impact</a><a href="#experience" data-fr="Parcours" data-en="Experience">Parcours</a><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a><a href="#contact">Contact</a>
     </nav>
-    <button class="lang-switch" type="button" aria-label="Switch to English"><span class="active">FR</span><span>EN</span></button>
+    <div class="header-actions">
+      <button class="lang-switch" type="button" aria-label="Switch to English"><span class="active">FR</span><span>EN</span></button>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu" data-aria-fr="Ouvrir le menu" data-aria-en="Open menu">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
   </header>
 
   <main id="main">
@@ -30,13 +46,13 @@
         <p class="lead" data-fr="ML Engineer spécialisé en forecasting. Je conçois des pipelines prédictifs de bout en bout, du signal brut à la décision opérationnelle." data-en="ML Engineer specialized in forecasting. I design end-to-end predictive pipelines, from raw signals to operational decisions.">ML Engineer spécialisé en forecasting. Je conçois des pipelines prédictifs de bout en bout, du signal brut à la décision opérationnelle.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects"><span data-fr="Voir les systèmes" data-en="Explore systems">Voir les systèmes</span><span aria-hidden="true">↘</span></a>
-          <a class="button secondary" href="assets/CV_David_Egbakou.pdf" download><span data-fr="Télécharger le CV" data-en="Download résumé">Télécharger le CV</span><span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="assets/CV_David_Egbakou.pdf" data-href-fr="assets/CV_David_Egbakou.pdf" data-href-en="assets/Resume_David_Egbakou.pdf" download><span data-fr="Télécharger le CV" data-en="Download résumé">Télécharger le CV</span><span aria-hidden="true">↓</span></a>
         </div>
       </div>
-      <div class="signal-card reveal" aria-label="Visualisation des performances de forecasting">
+      <div class="signal-card reveal" role="figure" aria-label="Visualisation des performances de forecasting" data-aria-fr="Visualisation des performances de forecasting" data-aria-en="Forecasting performance visualization">
         <div class="signal-head"><span>EU NETWORK / DAILY STOPS</span><span class="live"><i></i> PIPELINE HEALTHY</span></div>
         <div class="signal-meta"><span>Actual</span><span>Forecast P50</span><span>Confidence P10—P90</span></div>
-        <svg class="forecast-chart" viewBox="0 0 620 310" role="img" aria-label="Courbes de données réelles et prévues">
+        <svg class="forecast-chart" viewBox="0 0 620 310" role="img" aria-label="Courbes de données réelles et prévues" data-aria-fr="Courbes de données réelles et prévues" data-aria-en="Actual and forecast curves">
           <defs><linearGradient id="band" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#84e6c2" stop-opacity=".06"/><stop offset="1" stop-color="#84e6c2" stop-opacity=".28"/></linearGradient></defs>
           <g class="axis-labels"><text x="4" y="54">120k</text><text x="4" y="132">80k</text><text x="4" y="210">40k</text><text x="73" y="298">JUN 03</text><text x="264" y="298">JUN 24</text><text x="456" y="298">JUL 15</text><text x="560" y="298">AUG 05</text></g>
           <g class="grid"><path d="M58 46H604M58 124H604M58 202H604M58 280H604"/><path d="M115 30V280M236 30V280M357 30V280M478 30V280M599 30V280"/></g>
@@ -61,7 +77,7 @@
     <section class="experience section" id="experience">
       <div class="section-label"><span>02</span><p data-fr="Du modèle au terrain" data-en="From model to field">Du modèle au terrain</p></div>
       <div class="experience-layout">
-        <div class="manifesto reveal"><h2 data-fr="La précision compte. La robustesse décide." data-en="Accuracy matters. Robustness decides.">La précision compte.<br>La robustesse décide.</h2><p data-fr="Mon parcours s’est construit au croisement de la Data Science, du Data Engineering et du ML Engineering. Je travaille sur ce qui rend une prévision réellement exploitable : cible métier, qualité des données, validation temporelle, orchestration et monitoring." data-en="My path sits at the intersection of Data Science, Data Engineering and ML Engineering. I focus on what makes a forecast truly usable: business targets, data quality, temporal validation, orchestration and monitoring.">Mon parcours s’est construit au croisement de la Data Science, du Data Engineering et du ML Engineering. Je travaille sur ce qui rend une prévision réellement exploitable : cible métier, qualité des données, validation temporelle, orchestration et monitoring.</p></div>
+        <div class="manifesto reveal"><h2 data-fr="La précision compte.&lt;br&gt;La robustesse décide." data-en="Accuracy matters.&lt;br&gt;Robustness decides.">La précision compte.<br>La robustesse décide.</h2><p data-fr="Mon parcours s’est construit au croisement de la Data Science, du Data Engineering et du ML Engineering. Je travaille sur ce qui rend une prévision réellement exploitable : cible métier, qualité des données, validation temporelle, orchestration et monitoring." data-en="My path sits at the intersection of Data Science, Data Engineering and ML Engineering. I focus on what makes a forecast truly usable: business targets, data quality, temporal validation, orchestration and monitoring.">Mon parcours s’est construit au croisement de la Data Science, du Data Engineering et du ML Engineering. Je travaille sur ce qui rend une prévision réellement exploitable : cible métier, qualité des données, validation temporelle, orchestration et monitoring.</p></div>
         <div class="timeline">
           <article class="timeline-item reveal"><div class="time">2026</div><div><p class="role">Data Scientist · Europe</p><h3>DHL Express · Leipzig</h3><p data-fr="Pilotage end-to-end de FPW v4 : pipeline de forecasting pour 39 pays et environ 800 agences, combinant DeepAR, Chronos-2 et ensemble learning." data-en="End-to-end ownership of FPW v4: a forecasting pipeline for 39 countries and about 800 facilities, combining DeepAR, Chronos-2 and ensemble learning.">Pilotage end-to-end de FPW v4 : pipeline de forecasting pour 39 pays et environ 800 agences, combinant DeepAR, Chronos-2 et ensemble learning.</p><ul><li>Snowflake</li><li>Dataiku DSS</li><li>DeepAR</li><li>Chronos-2</li></ul></div></article>
           <article class="timeline-item reveal"><div class="time">2025—27</div><div><p class="role">Data Scientist · Alternance</p><h3>DHL Express France</h3><p data-fr="Refonte du moteur national de prévision : architecture hybride XGBoost, tendances dynamiques, saisonnalité STL et automatisation des workflows ML." data-en="Redesign of the national forecasting engine: hybrid XGBoost architecture, dynamic trends, STL seasonality and automated ML workflows.">Refonte du moteur national de prévision : architecture hybride XGBoost, tendances dynamiques, saisonnalité STL et automatisation des workflows ML.</p><ul><li>XGBoost</li><li>Python</li><li>SQL</li><li>Power BI</li></ul></div></article>
@@ -72,7 +88,7 @@
 
     <section class="projects section" id="projects">
       <div class="section-label"><span>03</span><p data-fr="Systèmes sélectionnés" data-en="Selected systems">Systèmes sélectionnés</p></div>
-      <div class="projects-head"><h2 data-fr="Concevoir, valider, industrialiser." data-en="Design, validate, productionize.">Concevoir, valider,<br>industrialiser.</h2><p data-fr="Trois projets qui racontent une progression : du raisonnement algorithmique à l’architecture de systèmes ML à grande échelle." data-en="Three projects tracing a progression from algorithmic thinking to large-scale ML system architecture.">Trois projets qui racontent une progression : du raisonnement algorithmique à l’architecture de systèmes ML à grande échelle.</p></div>
+      <div class="projects-head"><h2 data-fr="Concevoir, valider,&lt;br&gt;industrialiser." data-en="Design, validate,&lt;br&gt;productionize.">Concevoir, valider,<br>industrialiser.</h2><p data-fr="Trois projets qui racontent une progression : du raisonnement algorithmique à l’architecture de systèmes ML à grande échelle." data-en="Three projects tracing a progression from algorithmic thinking to large-scale ML system architecture.">Trois projets qui racontent une progression : du raisonnement algorithmique à l’architecture de systèmes ML à grande échelle.</p></div>
       <div class="project-list">
         <article class="project feature reveal"><div class="project-index">01 / INDUSTRIAL ML</div><div class="project-copy"><h3>European Forecasting System</h3><p data-fr="Un pipeline européen de prévision Pickup & Delivery, depuis des millions d’observations opérationnelles jusqu’à un horizon de 56 jours. Un “passeport d’éligibilité” filtre automatiquement les séries non fiables avant entraînement." data-en="A European Pickup & Delivery forecasting pipeline, from millions of operational observations to a 56-day horizon. An eligibility passport automatically filters unreliable series before training.">Un pipeline européen de prévision Pickup & Delivery, depuis des millions d’observations opérationnelles jusqu’à un horizon de 56 jours. Un “passeport d’éligibilité” filtre automatiquement les séries non fiables avant entraînement.</p><div class="tags"><span>DeepAR</span><span>Chronos-2</span><span>Gradient Boosting</span><span>Snowflake</span></div></div><div class="tech-panel pipeline-panel" aria-hidden="true"><div class="panel-top"><span>FPW_V4 / DAG</span><span>08:42 UTC</span></div><div class="dag"><span><i>01</i>INGEST<small>Snowflake</small></span><b>→</b><span><i>02</i>QUALIFY<small>Eligibility</small></span><b>→</b><span><i>03</i>ENSEMBLE<small>P50 / P90</small></span></div><div class="panel-status"><span>● 39 countries</span><span>● 800 series</span><span>✓ completed</span></div></div></article>
         <article class="project reveal"><div class="project-index">02 / DISTRIBUTED SYSTEMS</div><div class="project-copy"><h3>Mini Actor Framework</h3><p data-fr="Un framework Java inspiré d’Akka : acteurs, mailboxes, messages asynchrones et gestion du cycle de vie, avec thread-safety via Executors et Locks." data-en="An Akka-inspired Java framework: actors, mailboxes, asynchronous messages and lifecycle management, with thread safety via Executors and Locks.">Un framework Java inspiré d’Akka : acteurs, mailboxes, messages asynchrones et gestion du cycle de vie, avec thread-safety via Executors et Locks.</p><div class="tags"><span>Java</span><span>Concurrency</span><span>Executors</span></div></div><div class="tech-panel code-panel" aria-hidden="true"><div class="panel-top"><span>ActorSystem.java</span><span>JAVA</span></div><pre><span>12</span> public void <b>tell</b>(Message msg) {&#10;<span>13</span>   mailbox.<i>offer</i>(msg);&#10;<span>14</span>   executor.<i>submit</i>(() -&gt; {&#10;<span>15</span>     actor.<b>receive</b>(mailbox.poll());&#10;<span>16</span>   });&#10;<span>17</span> }</pre><div class="panel-status"><span>threads 08</span><span>queue 00</span><span>✓ safe</span></div></div></article>
@@ -86,7 +102,7 @@
     </section>
 
     <section class="contact section" id="contact">
-      <div class="contact-inner reveal"><p class="eyebrow">FORECAST THE NEXT MOVE</p><h2 data-fr="Construisons un système qui tient la route." data-en="Let’s build a system that holds up.">Construisons un système<br>qui tient la route.</h2><p data-fr="Je recherche des opportunités en Machine Learning Engineering, Forecasting et MLOps — là où les modèles rencontrent la production." data-en="I’m looking for opportunities in Machine Learning Engineering, Forecasting and MLOps — where models meet production.">Je recherche des opportunités en Machine Learning Engineering, Forecasting et MLOps — là où les modèles rencontrent la production.</p><div class="contact-links"><a class="button primary" href="mailto:davidegbakou@gmail.com">davidegbakou@gmail.com ↗</a><a href="https://github.com/davekg8" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/david-egbakou" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+      <div class="contact-inner reveal"><p class="eyebrow">FORECAST THE NEXT MOVE</p><h2 data-fr="Construisons un système&lt;br&gt;qui tient la route." data-en="Let’s build a system&lt;br&gt;that holds up.">Construisons un système<br>qui tient la route.</h2><p data-fr="Je recherche des opportunités en Machine Learning Engineering, Forecasting et MLOps — là où les modèles rencontrent la production." data-en="I’m looking for opportunities in Machine Learning Engineering, Forecasting and MLOps — where models meet production.">Je recherche des opportunités en Machine Learning Engineering, Forecasting et MLOps — là où les modèles rencontrent la production.</p><div class="contact-links"><a class="button primary" href="mailto:davidegbakou@gmail.com">davidegbakou@gmail.com ↗</a><a href="https://github.com/davekg8" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/david-egbakou" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
     </section>
   </main>
   <footer><span>© <span id="year"></span> David Egbakou</span><span data-fr="Paris · France" data-en="Paris · France">Paris · France</span><a href="#top" data-fr="Retour en haut ↑" data-en="Back to top ↑">Retour en haut ↑</a></footer>
