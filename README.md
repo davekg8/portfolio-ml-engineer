@@ -23,3 +23,14 @@ Chaque texte traduit porte `data-fr` et `data-en`. Pour un saut de ligne, écrir
 
 `og:image` pointe vers `assets/og-image.png` en chemin relatif. LinkedIn exige une URL absolue : une fois le site en ligne, remplacer par `https://<ton-site>/assets/og-image.png` dans `dist/index.html`.
 
+
+## CV
+
+- `cv/resume_en.tex` — source LaTeX du CV anglais, publié dans `dist/assets/Resume_David_Egbakou.pdf`.
+- Le CV français (`dist/assets/CV_David_Egbakou.pdf`) est compilé à part.
+
+Recompiler le CV anglais :
+
+```bash
+cd cv && pdflatex resume_en.tex && mv resume_en.pdf ../dist/assets/Resume_David_Egbakou.pdf
+```
