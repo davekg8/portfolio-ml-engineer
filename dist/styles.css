@@ -290,6 +290,14 @@ p {
 .metric {
   background: var(--paper);
   padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.metric .metric-bar {
+  margin-top: auto;
+}
+.metric > p:nth-child(2) {
+  margin-bottom: 2rem;
 }
 .metric-value {
   font-size: clamp(3.2rem, 6vw, 6.5rem);
@@ -1011,4 +1019,10 @@ footer {
   margin-top: 1.2rem;
   font: 400 0.75rem var(--mono);
   color: var(--muted);
+}
+.signal-note {
+  margin: 0.9rem 0 0;
+  font: 400 0.68rem var(--mono);
+  color: #8d9992;
+  letter-spacing: 0.04em;
 }
