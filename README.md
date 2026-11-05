@@ -1,5 +1,7 @@
 # Portfolio — David Egbakou
 
+En ligne : https://david-egbakou.netlify.app
+
 Portfolio bilingue de David Egbakou, positionné comme **ML Engineer spécialisé en forecasting et systèmes ML**.
 
 ## Lancer localement
@@ -19,10 +21,11 @@ La langue est choisie dans cet ordre : paramètre `?lang=fr` ou `?lang=en` dans 
 
 Chaque texte traduit porte `data-fr` et `data-en`. Pour un saut de ligne, écrire `&lt;br&gt;` dans ces attributs.
 
-## Aperçu de partage (LinkedIn, etc.)
+## Hébergement
 
-`og:image` pointe vers `assets/og-image.png` en chemin relatif. LinkedIn exige une URL absolue : une fois le site en ligne, remplacer par `https://<ton-site>/assets/og-image.png` dans `dist/index.html`.
+Hébergé sur Netlify (projet `david-egbakou`). `netlify.toml` publie le dossier `dist`.
 
+L'aperçu de partage (`og:image`, `og:url`) pointe vers `https://david-egbakou.netlify.app`. Si un nom de domaine est ajouté, remplacer cette adresse dans `dist/index.html`.
 
 ## CV
 
